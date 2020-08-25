@@ -18,6 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/consultants/{consultantId}', 'ConsultantsController@view')->name('consultants.view');
+Route::post('/consultants/{consultantId}/request', 'ConsultantsController@request')->name('consultants.request');
 
 Auth::routes();
 
